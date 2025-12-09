@@ -72,6 +72,16 @@ define Device/cyber_cyber3588-aib
 endef
 TARGET_DEVICES += cyber_cyber3588-aib
 
+define Device/erya_fnet-3399
+  $(Device/rk3399)
+  DEVICE_VENDOR := Erya
+  DEVICE_MODEL := FNet 3399
+  DEVICE_DTS := rk3399-fnet-3399
+  UBOOT_DEVICE_NAME := fnet3399-rk3399
+  DEVICE_PACKAGES := kmod-usb-net-rtl8152 kmod-hwmon-pwmfan kmod-rfkill
+endef
+TARGET_DEVICES += erya_fnet-3399
+
 define Device/ezpro_mrkaio-m68s
   DEVICE_VENDOR := EZPRO
   DEVICE_MODEL := Mrkaio M68S
